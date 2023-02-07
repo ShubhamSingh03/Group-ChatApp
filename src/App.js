@@ -10,7 +10,7 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="h-[90vh] bg-appBg sm:h-screen">
+    <div className="h-screen  bg-appBg">
       {user ? <Chat /> : <SignIn />}
       <div className="text-xs fixed bottom-0 left-4 text-white font-semibold sm:text-sm">
         Coded by:{" "}
